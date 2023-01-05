@@ -1,9 +1,4 @@
-
-dule 1-rectangle
-
-Defines a Rectangle class.
-
-"""
+ a Rectangle class."""
 
 
 
@@ -11,19 +6,19 @@ Defines a Rectangle class.
 
 class Rectangle:
 
-    """Rectangle class defined by width and height."""
+    """Represent a rectangle."""
 
 
 
     def __init__(self, width=0, height=0):
 
-        """Initializes a Rectangle instance.
+        """Initialize a new Rectangle.
 
         Args:
 
-            width: width of the rectangle
+            width (int): The width of the new rectangle.
 
-            height: height of the rectangle
+            height (int): The height of the new rectangle.
 
         """
 
@@ -37,7 +32,7 @@ class Rectangle:
 
     def width(self):
 
-        """Retrieves the width of a Rectangle instance."""
+        """Get/set the width of the rectangle."""
 
         return self.__width
 
@@ -46,14 +41,6 @@ class Rectangle:
     @width.setter
 
     def width(self, value):
-
-        """Sets the width of a Rectangle instance
-
-        Args:
-
-            value: value of the width, must be a positive integer
-
-        """
 
         if not isinstance(value, int):
 
@@ -71,7 +58,7 @@ class Rectangle:
 
     def height(self):
 
-        """Retrieves the height of a Rectangle instance."""
+        """Get/set the height of the rectangle."""
 
         return self.__height
 
@@ -80,14 +67,6 @@ class Rectangle:
     @height.setter
 
     def height(self, value):
-
-        """Sets the height of a Rectangle instance
-
-        Args:
-
-            value: value of the height, must be a positive integer
-
-        """
 
         if not isinstance(value, int):
 
