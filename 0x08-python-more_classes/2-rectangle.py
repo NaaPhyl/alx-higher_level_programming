@@ -30,7 +30,6 @@ class Rectangle:
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
-
             raise ValueError("width must be >= 0")
         self.__width = value
 
@@ -39,18 +38,17 @@ class Rectangle:
         """Retrieves the height of a Rectangle instance."""
         return self.__height
 
-   @height.setter
+    @height.setter
     def height(self, value):
         """Sets the height of a Rectangle instance
         Args:
             value: value of the height, must be a positive integer
-        """
+       """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-
 
     def area(self):
         """Calculates the area of a Rectangle instance
